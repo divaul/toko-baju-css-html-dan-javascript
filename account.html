@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akun Saya - PRESTIGE</title>
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PRESTIGE</h1>
+                <p>Premium Fashion Store</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Beranda</a></li>
+                    <li><a href="koleksi.html">Koleksi</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                    <li><a href="kontak.html">Kontak</a></li> 
+                    <li class="account-menu">
+                        <a href="#" class="account-trigger">
+                            <i class="fas fa-shopping-cart " style="font-size: 20px;"></i>
+                        </a>
+                        <div class="account-dropdown">
+                            <a href="keranjang.html" class="dropdown-item">
+                                <i class="fa fa-cart-plus"></i> Keranjang
+                            </a>
+                            <a href="checkout.html" class="dropdown-item">
+                                <i class="fas fa-cart-arrow-down"></i> checkout
+                            </a>
+                            
+                        </div>
+                </li>
+                    <li class="account-menu">
+                        <a href="#" class="account-trigger">
+                            <i class="fas fa-user " style="font-size: 20px;"></i>
+                        </a>
+                        <div class="account-dropdown">
+                            <a href="login.html" class="dropdown-item">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </a>
+                            <a href="daftar.html" class="dropdown-item">
+                                <i class="fas fa-user-plus"></i> Daftar
+                            </a>
+                            <div class="dropdown-divider"></div>
+                        <a href="account.html" class="dropdown-item">
+                            <i class="fas fa-user-cog"></i> My Account
+                        </a>
+                        </div>
+                    </li>
+                    
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Akun Saya</h2>
+            <p>Kelola informasi akun dan pesanan Anda</p>
+        </div>
+    </section>
+
+    <section class="account-section">
+        <div class="container">
+            <div class="account-container">
+                <!-- Sidebar Navigasi -->
+                <div class="account-sidebar">
+                    <div class="account-info">
+                        <div class="avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3>Emyuel</h3>
+                        <p>Member sejak embrio</p>
+                    </div>
+                    
+                    <nav class="akun">
+                        <ul>
+                            <li class="active">
+                                <a href="#dashboard">
+                                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#orders">
+                                    <i class="fas fa-box-open"></i> Pesanan Saya
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#addresses">
+                                    <i class="fas fa-map-marker-alt"></i>  Alamat Saya
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#wishlist">
+                                    <i class="fas fa-heart"></i> Wishlist
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#account-details">
+                                    <i class="fas fa-user-cog"></i> Detail Akun
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#change-password">
+                                    <i class="fas fa-lock"></i> Ubah Password
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html">
+                                    <i class="fas fa-sign-out-alt"></i> Keluar
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+                
+                <!-- Konten Utama -->
+                <div class="account-content">
+                    <!-- Dashboard -->
+                    <div id="dashboard" class="tab-content active">
+                        <h3><i class="fas fa-tachometer-alt"></i> Dashboard</h3>
+                        <div class="welcome-message">
+                            <p>Halo <strong>Emyuel</strong> (bukan <strong>Emyuel</strong>? <a href="login.html">Keluar</a>)</p>
+                            <p>Dari dashboard akun Anda, Anda dapat melihat pesanan terbaru, mengelola alamat pengiriman dan tagihan, serta mengubah password dan detail akun Anda.</p>
+                        </div>
+                        
+                        <div class="account-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-box-open"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h4>Total Pesanan</h4>
+                                    <p>5</p>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h4>Wishlist</h4>
+                                    <p>3 Item</p>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h4>Alamat</h4>
+                                    <p>2 Disimpan</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="recent-orders">
+                            <h4>Pesanan Terakhir</h4>
+                            <div class="orders-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Order</th>
+                                            <th>Tanggal</th>
+                                            <th>Status</th>
+                                            <th>Total</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#PRESTIGE-20230515-001</td>
+                                            <td>15 Mei 2023</td>
+                                            <td><span class="status completed">Selesai</span></td>
+                                            <td>Rp 1,682,000</td>
+                                            <td><a href="#" class="view-order">Lihat</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>#PRESTIGE-20230402-005</td>
+                                            <td>2 April 2023</td>
+                                            <td><span class="status processing">Diproses</span></td>
+                                            <td>Rp 1,250,000</td>
+                                            <td><a href="#" class="view-order">Lihat</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="#orders" class="btn btn-small">Lihat Semua Pesanan</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Pesanan Saya -->
+                    <div id="orders" class="tab-content">
+                        <h3><i class="fas fa-box-open"></i> Pesanan Saya</h3>
+                        <div class="orders-list">
+                            <div class="order-card">
+                                <div class="order-header">
+                                    <div class="order-info">
+                                        <h4>Order #PRESTIGE-20230515-001</h4>
+                                        <p>Tanggal: <strong>15 Mei 2023</strong></p>
+                                        <p>Status: <span class="status completed">Selesai</span></p>
+                                        <p>Total: <strong>Rp 1,682,000</strong></p>
+                                    </div>
+                                    <div class="order-actions">
+                                        <a href="#" class="btn btn-small">Lihat Detail</a>
+                                    </div>
+                                </div>
+                                <div class="order-items">
+                                    <div class="order-item">
+                                        <img src="gambar/gambar produk/Blazer Premium.png" alt="Luxury Blazer">
+                                        <div class="item-info">
+                                            <h5>Luxury Blazer</h5>
+                                            <p>Qty: 1</p>
+                                        </div>
+                                    </div>
+                                    <div class="order-item">
+                                        <img src="gambar/gambar produk/Formal Shirt.png" alt="Business Shirt">
+                                        <div class="item-info">
+                                            <h5>Business Shirt</h5>
+                                            <p>Qty: 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="order-card">
+                                <div class="order-header">
+                                    <div class="order-info">
+                                        <h4>Order #PRESTIGE-20230402-005</h4>
+                                        <p>Tanggal: <strong>2 April 2023</strong></p>
+                                        <p>Status: <span class="status processing">Diproses</span></p>
+                                        <p>Total: <strong>Rp 1,250,000</strong></p>
+                                    </div>
+                                    <div class="order-actions">
+                                        <a href="#" class="btn btn-small">Lihat Detail</a>
+                                    </div>
+                                </div>
+                                <div class="order-items">
+                                    <div class="order-item">
+                                        <img src="gambar/gambar produk/Classic Pants.png" alt="Classic Pants">
+                                        <div class="item-info">
+                                            <h5>Classic Pants</h5>
+                                            <p>Qty: 1</p>
+                                        </div>
+                                    </div>
+                                    <div class="order-item">
+                                        <img src="gambar/gambar produk/silk tie.png" alt="Silk Tie">
+                                        <div class="item-info">
+                                            <h5>Silk Tie</h5>
+                                            <p>Qty: 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Alamat Saya -->
+                    <div id="addresses" class="tab-content">
+                        <h3><i class="fas fa-map-marker-alt"></i> Alamat Saya</h3>
+                        <div class="address-actions">
+                            <button class="btn" id="addNewAddress">+ Tambah Alamat Baru</button>
+                        </div>
+                        
+                        <div class="address-list">
+                            <div class="address-card default">
+                                <div class="address-header">
+                                    <h4>Alamat Utama</h4>
+                                    <div class="address-actions">
+                                        <button class="edit-address"><i class="fas fa-edit"></i> Edit</button>
+                                        <button class="delete-address"><i class="fas fa-trash"></i> Hapus</button>
+                                    </div>
+                                </div>
+                                <div class="address-details">
+                                    <p><strong>John Doe</strong></p>
+                                    <p>Jl. Contoh No. 123</p>
+                                    <p>Jakarta Selatan, DKI Jakarta 12345</p>
+                                    <p>Indonesia</p>
+                                    <p><i class="fas fa-phone"></i> +62 812 3456 7890</p>
+                                </div>
+                            </div>
+                            
+                            <div class="address-card">
+                                <div class="address-header">
+                                    <h4>Alamat Tambahan</h4>
+                                    <div class="address-actions">
+                                        <button class="edit-address"><i class="fas fa-edit"></i> Edit</button>
+                                        <button class="delete-address"><i class="fas fa-trash"></i> Hapus</button>
+                                    </div>
+                                </div>
+                                <div class="address-details">
+                                    <p><strong>John Doe</strong></p>
+                                    <p>Jl. Alternatif No. 456</p>
+                                    <p>Bandung, Jawa Barat 40123</p>
+                                    <p>Indonesia</p>
+                                    <p><i class="fas fa-phone"></i> +62 822 9876 5432</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Wishlist -->
+                    <div id="wishlist" class="tab-content">
+                        <h3><i class="fas fa-heart"></i> Wishlist</h3>
+                        <div class="wishlist-grid">
+                            <div class="wishlist-item">
+                                <div class="product-image">
+                                    <img src="gambar/gambar produk/Casual Set.png" alt="Casual Set">
+                                    <button class="remove-wishlist"><i class="fas fa-times"></i></button>
+                                </div>
+                                <div class="product-info">
+                                    <h4>Casual Set</h4>
+                                    <p class="price">Rp 549,000</p>
+                                    <div class="product-actions">
+                                        <button class="btn btn-small add-to-cart">Tambah ke Keranjang</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="wishlist-item">
+                                <div class="product-image">
+                                    <img src="gambar/gambar produk/bulletproof vest.png" alt="Formal Vest">
+                                    <button class="remove-wishlist"><i class="fas fa-times"></i></button>
+                                </div>
+                                <div class="product-info">
+                                    <h4>Formal Vest</h4>
+                                    <p class="price">Rp 349,000</p>
+                                    <div class="product-actions">
+                                        <button class="btn btn-small add-to-cart">Tambah ke Keranjang</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="wishlist-item">
+                                <div class="product-image">
+                                    <img src="gambar/gambar produk/silk tie.png" alt="Silk Tie">
+                                    <button class="remove-wishlist"><i class="fas fa-times"></i></button>
+                                </div>
+                                <div class="product-info">
+                                    <h4>Silk Tie</h4>
+                                    <p class="price">Rp 199,000</p>
+                                    <div class="product-actions">
+                                        <button class="btn btn-small add-to-cart">Tambah ke Keranjang</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Detail Akun -->
+                    <div id="account-details" class="tab-content">
+                        <h3><i class="fas fa-user-cog"></i> Detail Akun</h3>
+                        <form id="accountForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="accountFirstName">Nama Depan</label>
+                                    <input type="text" id="accountFirstName" name="firstName" value="John">
+                                </div>
+                                <div class="form-group">
+                                    <label for="accountLastName">Nama Belakang</label>
+                                    <input type="text" id="accountLastName" name="lastName" value="Doe">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="accountEmail">Alamat Email</label>
+                                <input type="email" id="accountEmail" name="email" value="johndoe@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="accountPhone">Nomor Telepon</label>
+                                <input type="tel" id="accountPhone" name="phone" value="+6281234567890">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="accountBirthDate">Tanggal Lahir</label>
+                                <input type="date" id="accountBirthDate" name="birthDate" value="1990-01-01">
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="accountSubscribe" name="subscribe" checked>
+                                <label for="accountSubscribe">Berlangganan newsletter PRESTIGE</label>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn">Simpan Perubahan</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Ubah Password -->
+                    <div id="change-password" class="tab-content">
+                        <h3><i class="fas fa-lock"></i> Ubah Password</h3>
+                        <form id="passwordForm">
+                            <div class="form-group">
+                                <label for="currentPassword">Password Saat Ini</label>
+                                <div class="password-input">
+                                    <input type="password" id="currentPassword" name="currentPassword" required>
+                                    <span class="toggle-password"><i class="far fa-eye"></i></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="newPassword">Password Baru</label>
+                                <div class="password-input">
+                                    <input type="password" id="newPassword" name="newPassword" required>
+                                    <span class="toggle-password"><i class="far fa-eye"></i></span>
+                                </div>
+                                <div class="password-strength">
+                                    <div class="strength-meter"></div>
+                                    <span class="strength-text">Kekuatan password</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="confirmNewPassword">Konfirmasi Password Baru</label>
+                                <div class="password-input">
+                                    <input type="password" id="confirmNewPassword" name="confirmNewPassword" required>
+                                    <span class="toggle-password"><i class="far fa-eye"></i></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn">Ubah Password</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PRESTIGE</h3>
+                    <p>Fashion premium untuk tampilan elegan dan berkelas. Kualitas terbaik untuk gaya hidup Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Navigasi</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="koleksi.html">Koleksi</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Fashion No. 123, Jakarta</p>
+                    <p><i class="fas fa-phone"></i> +62 123 4567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@prestige.id</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2015 PRESTIGE. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/account.js"></script>
+</body>
+</html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produk - PRESTIGE</title>
     <link rel="stylesheet" href="css/produk.css">
+    <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -16,12 +17,43 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="index.html" >Beranda</a></li>
                     <li><a href="koleksi.html">Koleksi</a></li>
                     <li><a href="produk.html" class="active">Produk</a></li>
-                    <li><a href="tentang-kami.html" >Tentang Kami</a></li>
-                    <li><a href="kontak.html">Kontak</a></li>
-                </ul>
+                    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                    <li><a href="kontak.html">Kontak</a></li> 
+                    <li class="account-menu">
+                        <a href="#" class="account-trigger">
+                            <i class="fas fa-shopping-cart " style="font-size: 20px;"></i>
+                        </a>
+                        <div class="account-dropdown">
+                            <a href="keranjang.html" class="dropdown-item">
+                                <i class="fa fa-cart-plus"></i> Keranjang
+                            </a>
+                            <a href="checkout.html" class="dropdown-item">
+                                <i class="fas fa-cart-arrow-down"></i> checkout
+                            </a>
+                            
+                        </div>
+                </li>
+                    <li class="account-menu">
+                        <a href="#" class="account-trigger">
+                            <i class="fas fa-user " style="font-size: 20px;"></i>
+                        </a>
+                        <div class="account-dropdown">
+                            <a href="login.html" class="dropdown-item">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </a>
+                            <a href="daftar.html" class="dropdown-item">
+                                <i class="fas fa-user-plus"></i> Daftar
+                            </a>
+                            <div class="dropdown-divider"></div>
+                        <a href="account.html" class="dropdown-item">
+                            <i class="fas fa-user-cog"></i> My Account
+                        </a>
+                        </div>
+                    </li>
+                    
             </nav>
         </div>
     </header>
@@ -217,5 +249,6 @@
             </div>
         </div>
     </footer>
+    <script src="script/dropdown.js"></script>
 </body>
 </html>

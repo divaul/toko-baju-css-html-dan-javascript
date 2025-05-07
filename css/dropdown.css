@@ -1,0 +1,158 @@
+/* ======= ACCOUNT MENU - MERGED WITH EXISTING CSS ======= */
+.account-menu {
+    position: relative;
+    margin-left: 15px;
+}
+
+.account-trigger {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.account-icon {
+    font-size: 1.4rem;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.account-trigger:hover .account-icon {
+    color: #a67c52;
+    transform: scale(1.1);
+}
+
+.account-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1000;
+}
+
+.account-menu.active .account-dropdown,
+.account-menu:hover .account-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(8px);
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item i {
+    margin-right: 12px;
+    width: 20px;
+    font-size: 0.95rem;
+    color: #a67c52;
+    text-align: center;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f8f8;
+    color: #a67c52;
+    padding-left: 22px;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 8px 0;
+}
+
+/* ======= HEADER ADJUSTMENTS ======= */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+/* ======= RESPONSIVE ADJUSTMENTS ======= */
+@media (max-width: 1200px) {
+    nav ul li {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .account-icon {
+        font-size: 1.3rem;
+    }
+    
+    .account-trigger {
+        padding: 6px 10px;
+    }
+    
+    nav ul li {
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 10px 5px;
+    }
+    
+    .account-menu {
+        margin-left: 8px;
+    }
+    
+    .account-icon {
+        font-size: 1.25rem;
+    }
+    
+    .account-dropdown {
+        right: -50%;
+    }
+}
+
+@media (max-width: 576px) {
+    nav ul li {
+        margin: 0 8px 5px;
+    }
+    
+    .account-dropdown {
+        width: 180px;
+    }
+}
+

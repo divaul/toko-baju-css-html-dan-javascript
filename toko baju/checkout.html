@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - PRESTIGE</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PRESTIGE</h1>
+                <p>Premium Fashion Store</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="koleksi.html">Koleksi</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                    <li><a href="kontak.html">Kontak</a></li> 
+                    <li class="account-menu">
+                        <a href="#" class="account-trigger">
+                            <i class="fas fa-shopping-cart " style="font-size: 20px;"></i>
+                        </a>
+                        <div class="account-dropdown">
+                            <a href="keranjang.html" class="dropdown-item">
+                                <i class="fa fa-cart-plus"></i> Keranjang
+                            </a>
+                            <a href="checkout.html" class="dropdown-item">
+                                <i class="fas fa-cart-arrow-down"></i> checkout
+                            </a>
+                            
+                        </div>
+                </li>
+                    <li class="account-menu">
+                        <a href="#" class="account-trigger">
+                            <i class="fas fa-user " style="font-size: 20px;"></i>
+                        </a>
+                        <div class="account-dropdown">
+                            <a href="login.html" class="dropdown-item">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </a>
+                            <a href="daftar.html" class="dropdown-item">
+                                <i class="fas fa-user-plus"></i> Daftar
+                            </a>
+                            <div class="dropdown-divider"></div>
+                        <a href="account.html" class="dropdown-item">
+                            <i class="fas fa-user-cog"></i> My Account
+                        </a>
+                        </div>
+                    </li>
+                    
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Checkout</h2>
+            <p>Selesaikan pembelian Anda</p>
+        </div>
+    </section>
+
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-steps">
+                <div class="step active" data-step="1">
+                    <span class="step-title">Informasi Pengiriman</span>
+                </div>
+                <div class="step" data-step="2">
+                    <span class="step-title">Metode Pembayaran</span>
+                </div>
+                <div class="step" data-step="3">
+                    <span class="step-title">Konfirmasi Pesanan</span>
+                </div>
+            </div>
+            
+            <div class="checkout-container">
+                <div class="checkout-form">
+                    <form id="shippingForm" class="step-content active" data-step="1">
+                        <h3>Informasi Pengiriman</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Nama Lengkap</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                                <span class="error-message">Harap masukkan nama lengkap</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon</label>
+                                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,13}">
+                                <span class="error-message">Harap masukkan nomor telepon yang valid</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message">Harap masukkan email yang valid</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">Alamat Lengkap</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                            <span class="error-message">Harap masukkan alamat lengkap</span>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="province">Provinsi</label>
+                                <select id="province" name="province" required>
+                                    <option value="">Pilih Provinsi</option>
+                                    <option value="DKI Jakarta">DKI Jakarta</option>
+                                    <option value="Jawa Barat">Jawa Barat</option>
+                                    <option value="Jawa Tengah">Jawa Tengah</option>
+                                    <option value="Jawa Timur">Jawa Timur</option>
+                                    <option value="Bali">Bali</option>
+                                </select>
+                                <span class="error-message">Harap pilih provinsi</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">Kota/Kabupaten</label>
+                                <select id="city" name="city" required>
+                                    <option value="">Pilih Kota/Kabupaten</option>
+                                </select>
+                                <span class="error-message">Harap pilih kota/kabupaten</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="district">Kecamatan</label>
+                                <input type="text" id="district" name="district" required>
+                                <span class="error-message">Harap masukkan kecamatan</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="postalCode">Kode Pos</label>
+                                <input type="text" id="postalCode" name="postalCode" required pattern="[0-9]{5}">
+                                <span class="error-message">Harap masukkan kode pos yang valid</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="shippingMethod">Metode Pengiriman</label>
+                            <select id="shippingMethod" name="shippingMethod" required>
+                                <option value="">Pilih Metode Pengiriman</option>
+                                <option value="standard">Standar (3-5 hari) - Rp 25.000</option>
+                                <option value="express">Express (1-2 hari) - Rp 50.000</option>
+                                <option value="free">Gratis Ongkir (min. belanja Rp 1.000.000)</option>
+                            </select>
+                            <span class="error-message">Harap pilih metode pengiriman</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="notes">Catatan (Opsional)</label>
+                            <textarea id="notes" name="notes" rows="2" placeholder="Contoh: Tingkat 2, Gedung Biru"></textarea>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-light" id="cancelCheckout">Batalkan</button>
+                            <button type="button" class="btn" id="nextToPayment">Lanjut ke Pembayaran</button>
+                        </div>
+                    </form>
+                    
+                    <form id="paymentForm" class="step-content" data-step="2">
+                        <h3>Metode Pembayaran</h3>
+                        <div class="payment-methods">
+                            <div class="payment-method">
+                                <input type="radio" id="creditCard" name="paymentMethod" value="creditCard" checked>
+                                <label for="creditCard">
+                                    <i class="far fa-credit-card"></i>
+                                    <span>Kartu Kredit/Debit</span>
+                                </label>
+                                <div class="payment-details">
+                                    <div class="form-group">
+                                        <label for="cardNumber">Nomor Kartu</label>
+                                        <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" pattern="[0-9\s]{13,19}">
+                                        <span class="error-message">Nomor kartu tidak valid</span>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="cardName">Nama di Kartu</label>
+                                            <input type="text" id="cardName" name="cardName">
+                                            <span class="error-message">Harap masukkan nama di kartu</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cardExpiry">Masa Berlaku</label>
+                                            <input type="text" id="cardExpiry" name="cardExpiry" placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/[0-9]{2}">
+                                            <span class="error-message">Format MM/YY</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cardCvv">CVV</label>
+                                            <input type="text" id="cardCvv" name="cardCvv" placeholder="123" pattern="[0-9]{3,4}">
+                                            <span class="error-message">3 atau 4 digit</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-method">
+                                <input type="radio" id="bankTransfer" name="paymentMethod" value="bankTransfer">
+                                <label for="bankTransfer">
+                                    <i class="fas fa-university"></i>
+                                    <span>Transfer Bank</span>
+                                </label>
+                                <div class="payment-details">
+                                    <p>Silakan transfer ke rekening berikut:</p>
+                                    <div class="bank-account">
+                                        <p><strong>Bank BCA</strong></p>
+                                        <p>No. Rekening: 123 456 7890</p>
+                                        <p>Atas Nama: PT PRESTIGE FASHION</p>
+                                    </div>
+                                    <div class="bank-account">
+                                        <p><strong>Bank Mandiri</strong></p>
+                                        <p>No. Rekening: 987 654 3210</p>
+                                        <p>Atas Nama: PT PRESTIGE FASHION</p>
+                                    </div>
+                                    <p class="note">Harap transfer tepat sesuai total pesanan dan konfirmasi pembayaran setelah transfer.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-method">
+                                <input type="radio" id="ewallet" name="paymentMethod" value="ewallet">
+                                <label for="ewallet">
+                                    <i class="fas fa-wallet"></i>
+                                    <span>E-Wallet</span>
+                                </label>
+                                <div class="payment-details">
+                                    <div class="ewallet-options">
+                                        <div class="ewallet-option">
+                                            <input type="radio" id="gopay" name="ewallet" value="gopay" checked>
+                                            <label for="gopay">
+                                                <img src="https://via.placeholder.com/50/8bc34a/ffffff?text=GP" alt="GoPay">
+                                                <span>GoPay</span>
+                                            </label>
+                                        </div>
+                                        <div class="ewallet-option">
+                                            <input type="radio" id="ovo" name="ewallet" value="ovo">
+                                            <label for="ovo">
+                                                <img src="https://via.placeholder.com/50/673ab7/ffffff?text=OV" alt="OVO">
+                                                <span>OVO</span>
+                                            </label>
+                                        </div>
+                                        <div class="ewallet-option">
+                                            <input type="radio" id="dana" name="ewallet" value="dana">
+                                            <label for="dana">
+                                                <img src="https://via.placeholder.com/50/009688/ffffff?text=DN" alt="DANA">
+                                                <span>DANA</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-light" id="backToShipping">Kembali</button>
+                            <button type="button" class="btn" id="reviewOrder">Tinjau Pesanan</button>
+                        </div>
+                    </form>
+                    
+                    <div class="step-content order-summary" data-step="3">
+                        <h3>Konfirmasi Pesanan</h3>
+                        <div class="order-details">
+                            <div class="shipping-info">
+                                <h4>Informasi Pengiriman</h4>
+                                <p id="confirmName">John Doe</p>
+                                <p id="confirmPhone">081234567890</p>
+                                <p id="confirmAddress">Jl. Contoh No. 123, RT 01/RW 02</p>
+                                <p id="confirmCity">Jakarta Selatan, DKI Jakarta - 12345</p>
+                                <p id="confirmShipping">Pengiriman: Standar (3-5 hari) - Rp 25.000</p>
+                            </div>
+                            
+                            <div class="payment-info">
+                                <h4>Metode Pembayaran</h4>
+                                <p id="confirmPaymentMethod">Kartu Kredit/Debit (VISA •••• 3456)</p>
+                                <div id="confirmPaymentDetails"></div>
+                            </div>
+                            
+                            <div class="order-items">
+                                <h4>Pesanan Anda</h4>
+                                <div class="order-item">
+                                    <div class="item-info">
+                                        <img src="gambar/gambar produk/Blazer Premium.png" alt="Luxury Blazer">
+                                        <div>
+                                            <h5>Luxury Blazer</h5>
+                                            <p>Ukuran: M</p>
+                                            <p>Warna: Hitam</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-price">Rp 899.000</div>
+                                    <div class="item-qty">1</div>
+                                    <div class="item-subtotal">Rp 899.000</div>
+                                </div>
+                                
+                                <div class="order-item">
+                                    <div class="item-info">
+                                        <img src="gambar/gambar produk/Formal Shirt.png" alt="Business Shirt">
+                                        <div>
+                                            <h5>Business Shirt</h5>
+                                            <p>Ukuran: L</p>
+                                            <p>Warna: Putih</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-price">Rp 429.000</div>
+                                    <div class="item-qty">2</div>
+                                    <div class="item-subtotal">Rp 858.000</div>
+                                </div>
+                            </div>
+                            
+                            <div class="order-totals">
+                                <div class="total-row">
+                                    <span>Subtotal</span>
+                                    <span>Rp 1.757.000</span>
+                                </div>
+                                <div class="total-row">
+                                    <span>Pengiriman</span>
+                                    <span>Rp 25.000</span>
+                                </div>
+                                <div class="total-row">
+                                    <span>Diskon</span>
+                                    <span>- Rp 100.000</span>
+                                </div>
+                                <div class="total-row grand-total">
+                                    <span>Total</span>
+                                    <span>Rp 1.682.000</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-light" id="backToPayment">Kembali</button>
+                            <button type="button" class="btn" id="placeOrder">Buat Pesanan</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-summary-sidebar">
+                    <h3>Ringkasan Pesanan</h3>
+                    <div class="order-items">
+                        <div class="order-item">
+                            <img src="gambar/gambar produk/Blazer Premium.png" alt="Luxury Blazer">
+                            <div>
+                                <h5>Luxury Blazer</h5>
+                                <p>1 × Rp 899.000</p>
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <img src="gambar/gambar produk/Formal Shirt.png" alt="Business Shirt">
+                            <div>
+                                <h5>Business Shirt</h5>
+                                <p>2 × Rp 429.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Subtotal</span>
+                            <span>Rp 1.757.000</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Pengiriman</span>
+                            <span>Rp 25.000</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Diskon</span>
+                            <span>- Rp 100.000</span>
+                        </div>
+                        <div class="total-row grand-total">
+                            <span>Total</span>
+                            <span>Rp 1.682.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PRESTIGE</h3>
+                    <p>Fashion premium untuk tampilan elegan dan berkelas. Kualitas terbaik untuk gaya hidup Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Navigasi</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="koleksi.html">Koleksi</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Fashion No. 123, Jakarta</p>
+                    <p><i class="fas fa-phone"></i> +62 123 4567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@prestige.id</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2015 PRESTIGE. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script/checkout.js"></script>
+    <script src="script/dropdown.js"></script>
+</body>
+</html>

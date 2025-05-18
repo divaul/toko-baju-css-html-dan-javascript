@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Akun - PRESTIGE</title>
+    <link rel="stylesheet" href="css/daftar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PRESTIGE</h1>
+                <p>Premium Fashion Store</p>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="keranjang.html">
+                            <i class="material-icons" style="color: black;">exit_to_app</i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="register-section">
+        <div class="container">
+            <div class="register-box">
+                <div class="register-header">
+                    <h2>Buat Akun Baru</h2>
+                    <p>Sudah punya akun? <a href="login.html">Masuk disini</a></p>
+                </div>
+                
+                <form id="registerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Nama Depan<span class="required">*</span></label>
+                            <input type="text" id="firstName" name="firstName" required placeholder="Masukkan nama depan">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Nama Belakang<span class="required">*</span></label>
+                            <input type="text" id="lastName" name="lastName" required placeholder="Masukkan nama belakang">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email<span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="contoh@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Nomor Telepon<span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required placeholder="081234567890">
+                        <small class="hint">Format: 08xxxxxxxxxx</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password<span class="required">*</span></label>
+                        <div class="password-input">
+                            <input type="password" id="password" name="password" required placeholder="Minimal 8 karakter">
+                            <span class="toggle-password"><i class="far fa-eye"></i></span>
+                        </div>
+                        <div class="password-strength">
+                            <div class="strength-meter">
+                                <div class="strength-bar"></div>
+                            </div>
+                            <span class="strength-text">Kekuatan password: <span id="strengthLevel">Lemah</span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">Konfirmasi Password<span class="required">*</span></label>
+                        <div class="password-input">
+                            <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Ketik ulang password">
+                            <span class="toggle-password"><i class="far fa-eye"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birthDate">Tanggal Lahir</label>
+                        <input type="date" id="birthDate" name="birthDate">
+                        <small class="hint">Opsional</small>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="subscribe" name="subscribe" checked>
+                        <label for="subscribe">Saya ingin berlangganan newsletter PRESTIGE</label>
+                    </div>
+                    
+                    <div class="form-group checkbox-group terms-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Saya menyetujui <a href="#">Syarat & Ketentuan</a> dan <a href="#">Kebijakan Privasi</a> PRESTIGE<span class="required">*</span></label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Daftar</span>
+                        <i class="fas fa-arrow-right btn-icon"></i>
+                    </button>
+                </form>
+                
+                <div class="social-register">
+                    <div class="divider">
+                        <span class="divider-text">Atau daftar dengan</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            <span>Google</span>
+                        </a>
+                        <a href="#" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Tentang Kami</a>
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat & Ketentuan</a>
+                <a href="#">Bantuan</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 PRESTIGE. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/daftar.js"></script>
+</body>
+</html>

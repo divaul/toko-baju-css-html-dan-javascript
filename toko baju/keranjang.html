@@ -1,0 +1,259 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja - PRESTIGE</title>
+    <link rel="stylesheet" href="css/keranjang.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PRESTIGE</h1>
+                <p>Premium Fashion Store</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Beranda</a></li>
+                    <li><a href="koleksi.html">Koleksi</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                    <li><a href="kontak.html">Kontak</a></li> 
+                    <li class="account-menu">
+                        <a href="#" class="account-trigger">
+                            <i class="fas fa-shopping-cart " style="font-size: 20px;"></i>
+                        </a>
+                        <div class="account-dropdown">
+                            <a href="keranjang.html" class="dropdown-item">
+                                <i class="fa fa-cart-plus"></i> Keranjang
+                            </a>
+                            <a href="checkout.html" class="dropdown-item">
+                                <i class="fas fa-cart-arrow-down"></i> checkout
+                            </a>
+                            
+                        </div>
+                </li>
+                    <li class="account-menu">
+                        <a href="#" class="account-trigger">
+                            <i class="fas fa-user " style="font-size: 20px;"></i>
+                        </a>
+                        <div class="account-dropdown">
+                            <a href="login.html" class="dropdown-item">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </a>
+                            <a href="daftar.html" class="dropdown-item">
+                                <i class="fas fa-user-plus"></i> Daftar
+                            </a>
+                            <div class="dropdown-divider"></div>
+                        <a href="account.html" class="dropdown-item">
+                            <i class="fas fa-user-cog"></i> My Account
+                        </a>
+                        </div>
+                    </li>
+                    
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Keranjang Belanja</h2>
+            <p>Tinjau dan kelola produk dalam keranjang Anda</p>
+        </div>
+    </section>
+
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <h3>Produk</h3>
+                        <h3>Harga</h3>
+                        <h3>Kuantitas</h3>
+                        <h3>Subtotal</h3>
+                    </div>
+                    
+                    <div class="cart-item">
+                        <div class="product-info">
+                            <img src="gambar/gambar produk/Blazer Premium.png" alt="Luxury Blazer">
+                            <div class="product-details">
+                                <h4>Luxury Blazer</h4>
+                                <p>Ukuran: M</p>
+                                <p>Warna: Hitam</p>
+                                <button class="remove-item"><i class="fas fa-trash-alt"></i> Hapus</button>
+                            </div>
+                        </div>
+                        <div class="product-price">Rp 899.000</div>
+                        <div class="product-quantity">
+                            <button class="qty-btn minus" ><i class="fas fa-minus"></i></button>
+                            <input type="text" value="1" class="qty-input">
+                            <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div class="product-subtotal">Rp 899.000</div>
+                    </div>
+                    
+                    <div class="cart-item">
+                        <div class="product-info">
+                            <img src="gambar/gambar produk/Formal Shirt.png" alt="Business Shirt">
+                            <div class="product-details">
+                                <h4>Business Shirt</h4>
+                                <p>Ukuran: L</p>
+                                <p>Warna: Putih</p>
+                                <button class="remove-item"><i class="fas fa-trash-alt"></i> Hapus</button>
+                            </div>
+                        </div>
+                        <div class="product-price">Rp 429.000</div>
+                        <div class="product-quantity">
+                            <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                            <input type="text" value="2" class="qty-input">
+                            <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div class="product-subtotal">Rp 858.000</div>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h3>Ringkasan Belanja</h3>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span class="subtotal-amount">Rp 1.757.000</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Pengiriman</span>
+                        <span class="shipping-option">
+                            <select id="shipping">
+                                <option value="standard">Standar: Rp 25.000 (3-5 hari)</option>
+                                <option value="express">Express: Rp 50.000 (1-2 hari)</option>
+                                <option value="free">Gratis (min. belanja Rp 1.000.000)</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Diskon</span>
+                        <span class="discount-amount">- Rp 100.000</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span class="total-amount">Rp 1.657.000</span>
+                    </div>
+                    <div class="coupon-form">
+                        <input type="text" placeholder="Masukkan kode kupon">
+                        <button class="btn-small">Gunakan</button>
+                    </div>
+                    <button class="btn checkout-btn">Lanjut ke Pembayaran</button>
+                    <p class="secure-checkout"><i class="fas fa-lock"></i> Pembayaran aman dan terenkripsi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">Anda Mungkin Juga Suka</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/gambar produk/silk tie.png" alt="Silk Tie">
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Silk Tie</h3>
+                        <p class="price">Rp 199.000</p>
+                        <div class="product-actions">
+                            <button class="btn-small add-to-cart"><i class="fas fa-shopping-cart"></i> Tambah</button>
+                            <a href="produk.html" class="btn-small outline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/gambar produk/bulletproof vest.png" alt="Formal Vest">
+                    </div>
+                    <div class="product-info">
+                        <h3>Formal Vest</h3>
+                        <p class="price">Rp 349.000</p>
+                        <div class="product-actions">
+                            <button class="btn-small add-to-cart"><i class="fas fa-shopping-cart"></i> Tambah</button>
+                            <a href="produk.html" class="btn-small outline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/gambar produk/Classic Pants.png" alt="Classic Pants">
+                        <div class="product-badge">Bestseller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Pants</h3>
+                        <p class="price">Rp 429.000</p>
+                        <div class="product-actions">
+                            <button class="btn-small add-to-cart"><i class="fas fa-shopping-cart"></i> Tambah</button>
+                            <a href="produk.html" class="btn-small outline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/gambar produk/Casual Set.png" alt="Casual Set">
+                    </div>
+                    <div class="product-info">
+                        <h3>Casual Set</h3>
+                        <p class="price">Rp 549.000</p>
+                        <div class="product-actions">
+                            <button class="btn-small add-to-cart"><i class="fas fa-shopping-cart"></i> Tambah</button>
+                            <a href="produk.html" class="btn-small outline">Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PRESTIGE</h3>
+                    <p>Fashion premium untuk tampilan elegan dan berkelas. Kualitas terbaik untuk gaya hidup Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Navigasi</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="koleksi.html">Koleksi</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Fashion No. 123, Jakarta</p>
+                    <p><i class="fas fa-phone"></i> +62 123 4567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@prestige.id</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2015 PRESTIGE. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/keranjang.js"></script>
+    <script src="script/dropdown.js"></script>
+</body>
+</html>

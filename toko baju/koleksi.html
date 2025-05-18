@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRESTIGE- Toko Busana Premium</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>Koleksi - PRESTIGE</title>
+    <link rel="stylesheet" href="css/koleksi.css">
     <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -15,13 +15,10 @@
                 <h1>PRESTIGE</h1>
                 <p>Premium Fashion Store</p>
             </div>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-              </div>              
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Beranda</a></li>
-                    <li><a href="koleksi.html">Koleksi</a></li>
+                    <li><a href="index.html" >Beranda</a></li>
+                    <li><a href="koleksi.html" class="active">Koleksi</a></li>
                     <li><a href="produk.html">Produk</a></li>
                     <li><a href="tentang-kami.html">Tentang Kami</a></li>
                     <li><a href="kontak.html">Kontak</a></li> 
@@ -61,96 +58,138 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="page-header">
         <div class="container">
-            <div class="hero-content">
-                <h2>Fashion Terbaik untuk Anda</h2>
-                <p>Temukan koleksi terbaru untuk tampilan elegan dan berkelas</p>
-                <a href="koleksi.html" class="btn">Lihat Koleksi</a>
+            <h2>Koleksi Kami</h2>
+            <p>Temukan berbagai koleksi fashion premium untuk tampilan terbaik Anda</p>
+        </div>
+    </section>
+
+    <section class="collection">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <h3>Kategori</h3>
+                    <ul>
+                        <li><a href="#" class="active">Semua</a></li>
+                        <li><a href="#">Formal</a></li>
+                        <li><a href="#">Casual</a></li>
+                        <li><a href="#">Outer</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Urutkan</h3>
+                    <select>
+                        <option value="terbaru">Terbaru</option>
+                        <option value="harga-terendah">Harga: Terendah</option>
+                        <option value="harga-tertinggi">Harga: Tertinggi</option>
+                        <option value="populer">Paling Populer</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="collection-grid">
+                <div class="collection-card">
+                    <img src="gambar/gambar produk/formal.jpg" alt="Koleksi Formal">
+                    <div class="collection-info">
+                        <h3>Koleksi Formal</h3>
+                        <p>Tampil profesional dan elegan dengan koleksi formal kami</p>
+                        <a href="produk.html" class="btn">Lihat Produk</a>
+                    </div>
+                </div>
+                
+                <div class="collection-card">
+                    <img src="gambar/gambar produk/casual.jpeg" alt="Koleksi Casual">
+                    <div class="collection-info">
+                        <h3>Koleksi Casual</h3>
+                        <p>Nyaman dan stylish untuk kegiatan sehari-hari</p>
+                        <a href="produk.html" class="btn">Lihat Produk</a>
+                    </div>
+                </div>
+                
+                <div class="collection-card">
+                    <img src="gambar/gambar produk/outer.jpeg" alt="Koleksi Outer">
+                    <div class="collection-info">
+                        <h3>Koleksi Outer</h3>
+                        <p>Lapisan tambahan untuk tampilan berlapis yang menarik</p>
+                        <a href="produk.html" class="btn">Lihat Produk</a>
+                    </div>
+                </div>
+                
+                <div class="collection-card">
+                    <img src="gambar/gambar produk/Accessories.jpeg" alt="Koleksi Accessories">
+                    <div class="collection-info">
+                        <h3>Koleksi Accessories</h3>
+                        <p>Pelengkap fashion untuk tampilan yang sempurna</p>
+                        <a href="produk.html" class="btn">Lihat Produk</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="features">
+    <section class="featured-products">
         <div class="container">
-            <div class="feature-box">
-                <i class="fas fa-tshirt"></i>
-                <h3>Kualitas Premium</h3>
-                <p>Bahan berkualitas tinggi untuk kenyamanan maksimal</p>
-            </div>
-            <div class="feature-box">
-                <i class="fas fa-shipping-fast"></i>
-                <h3>Pengiriman Cepat</h3>
-                <p>Nikmati pengiriman cepat ke seluruh Indonesia</p>
-            </div>
-            <div class="feature-box">
-                <i class="fas fa-medal"></i>
-                <h3>Desain Eksklusif</h3>
-                <p>Desain terkini yang membuat Anda tampil beda</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="new-arrivals">
-        <div class="container">
-            <h2 class="section-title">Koleksi Terbaru</h2>
+            <h2 class="section-title">Produk Unggulan</h2>
             <div class="product-grid">
                 <div class="product-card">
                     <div class="product-image">
                         <img src="gambar/gambar produk/Blazer Premium.png" alt="Produk 1">
+                        <span class="badge">Terlaris</span>
                     </div>
                     <div class="product-info">
-                        <h3>Blazer Premium</h3>
-                        <p class="price">Rp 799.000</p>
+                        <h3>Luxury Blazer</h3>
+                        <p class="price">Rp 899.000</p>
                         <a href="produk.html" class="btn-small">Lihat Detail</a>
                     </div>
                 </div>
+                
                 <div class="product-card">
                     <div class="product-image">
                         <img src="gambar/gambar produk/Dress Elegant.png" alt="Produk 2">
+                        <span class="badge">Baru</span>
                     </div>
                     <div class="product-info">
-                        <h3>Dress Elegant</h3>
-                        <p class="price">Rp 649.000</p>
+                        <h3>Silk Dress</h3>
+                        <p class="price">Rp 749.000</p>
                         <a href="produk.html" class="btn-small">Lihat Detail</a>
                     </div>
                 </div>
+                
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="gambar/gambar produk/Casual Set.png" alt="Produk 3">
+                        <img src="gambar/gambar produk/bulletproof vest.png" alt="Produk 3">
                     </div>
                     <div class="product-info">
-                        <h3>Casual Set</h3>
-                        <p class="price">Rp 549.000</p>
+                        <h3>Premium Vest</h3>
+                        <p class="price">Rp 499.000</p>
                         <a href="produk.html" class="btn-small">Lihat Detail</a>
                     </div>
                 </div>
+                
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="gambar/gambar produk/Formal Shirt.png" alt="Produk 4">
+                        <img src="gambar/gambar produk/Classic Pants.png" alt="Produk 4">
+                        <span class="badge">Diskon</span>
                     </div>
                     <div class="product-info">
-                        <h3>Formal Shirt</h3>
-                        <p class="price">Rp 429.000</p>
+                        <h3>Classic Pants</h3>
+                        <p class="price"><span class="old-price">Rp 550.000</span> Rp 429.000</p>
                         <a href="produk.html" class="btn-small">Lihat Detail</a>
                     </div>
                 </div>
-            </div>
-            <div class="center">
-                <a href="koleksi.html" class="btn">Lihat Semua Koleksi</a>
             </div>
         </div>
     </section>
 
-    <section class="newsletter">
+    <section class="cta">
         <div class="container">
-            <div class="newsletter-content">
-                <h2>Dapatkan Update Terbaru</h2>
-                <p>Berlangganan newsletter kami untuk mendapatkan informasi dan penawaran eksklusif</p>
-                <form>
-                    <input type="email" placeholder="Masukkan alamat email Anda">
-                    <button type="submit" class="btn">Berlangganan</button>
-                </form>
+            <div class="cta-content">
+                <h2>Dapatkan Diskon 20%</h2>
+                <p>Khusus pembelian pertama untuk member baru</p>
+                <a href="produk.html" class="btn btn-light">Belanja Sekarang</a>
             </div>
         </div>
     </section>
@@ -194,15 +233,5 @@
         </div>
     </footer>
     <script src="script/dropdown.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.getElementById('hamburger');
-            const nav = document.querySelector('nav');
-            
-            hamburger.addEventListener('click', function() {
-                nav.classList.toggle('active');
-            });
-        });
-    </script>
 </body>
 </html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - PRESTIGE</title>
+    <link rel="stylesheet" href="css/kontak.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PRESTIGE</h1>
+                <p>Premium Fashion Store</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Beranda</a></li>
+                    <li><a href="koleksi.html">Koleksi</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                    <li><a href="kontak.html" class="active">Kontak</a></li> 
+                    <li class="account-menu">
+                        <a href="#" class="account-trigger">
+                            <i class="fas fa-shopping-cart " style="font-size: 20px;"></i>
+                        </a>
+                        <div class="account-dropdown">
+                            <a href="keranjang.html" class="dropdown-item">
+                                <i class="fa fa-cart-plus"></i> Keranjang
+                            </a>
+                            <a href="checkout.html" class="dropdown-item">
+                                <i class="fas fa-cart-arrow-down"></i> checkout
+                            </a>
+                            
+                        </div>
+                </li>
+                    <li class="account-menu">
+                        <a href="#" class="account-trigger">
+                            <i class="fas fa-user " style="font-size: 20px;"></i>
+                        </a>
+                        <div class="account-dropdown">
+                            <a href="login.html" class="dropdown-item">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </a>
+                            <a href="daftar.html" class="dropdown-item">
+                                <i class="fas fa-user-plus"></i> Daftar
+                            </a>
+                            <div class="dropdown-divider"></div>
+                        <a href="account.html" class="dropdown-item">
+                            <i class="fas fa-user-cog"></i> My Account
+                        </a>
+                        </div>
+                    </li>
+                    
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <p>Kami siap membantu Anda</p>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Alamat</h3>
+                    <p>Jl. Fashion No. 123</p>
+                    <p>Jakarta Selatan, 12345</p>
+                    <p>Indonesia</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telepon</h3>
+                    <p>+62 123 4567 890</p>
+                    <p>+62 123 8765 432</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>info@prestige.id</p>
+                    <p>cs@prestige.id</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Jam Operasional</h3>
+                    <p>Senin - Jumat: 10:00 - 21:00</p>
+                    <p>Sabtu - Minggu: 09:00 - 22:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <h2>Kirim Pesan</h2>
+                    <p>Ada pertanyaan atau kebutuhan khusus? Silakan isi form di bawah ini</p>
+                    
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon Anda">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subjek</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" selected disabled>Pilih subjek</option>
+                                    <option value="customer-service">Layanan Pelanggan</option>
+                                    <option value="order">Pesanan</option>
+                                    <option value="returns">Pengembalian</option>
+                                    <option value="partnership">Kerjasama</option>
+                                    <option value="other">Lainnya</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tulis pesan Anda di sini" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Saya ingin berlangganan newsletter PRESTIGE</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+                
+                <div class="contact-map">
+                    <h2>Lokasi Kami</h2>
+                    <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1443.9653239888107!2d106.80572139694415!3d-6.226205818720995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6aad7283c4b%3A0x4efcd0d8d64cad53!2sGrandLucky%20-%20SCBD!5e1!3m2!1sid!2sid!4v1744963721632!5m2!1sid!2sid" width="450" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="store-locations">
+                        <h3>Toko Lainnya</h3>
+                        <div class="location-tabs">
+                            <button class="location-tab active">Jakarta</button>
+                            <button class="location-tab">Bandung</button>
+                            <button class="location-tab">Surabaya</button>
+                            <button class="location-tab">Bali</button>
+                        </div>
+                        <div class="location-info active">
+                            <p><i class="fas fa-map-marker-alt"></i> Jakarta Selatan: Jl. Fashion No. 123</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Jakarta Pusat: Grand Indonesia Lt. 2</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Jakarta Utara: Mall Kelapa Gading Lt. 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana cara melakukan pemesanan online?</h3>
+                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Untuk melakukan pemesanan online, silakan pilih produk yang diinginkan, tambahkan ke keranjang, dan ikuti proses checkout. Anda perlu membuat akun atau masuk jika sudah memiliki akun untuk menyelesaikan pemesanan.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apa saja metode pembayaran yang tersedia?</h3>
+                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kami menerima pembayaran melalui kartu kredit/debit, transfer bank, e-wallet (GoPay, OVO, Dana), dan pembayaran di tempat (COD) untuk wilayah tertentu.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Berapa lama waktu pengiriman?</h3>
+                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Waktu pengiriman bervariasi tergantung lokasi Anda. Untuk wilayah Jabodetabek, pengiriman memakan waktu 1-2 hari kerja. Untuk wilayah lainnya di Indonesia, pengiriman memakan waktu 3-7 hari kerja.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana kebijakan pengembalian produk?</h3>
+                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kami menerima pengembalian produk dalam 14 hari setelah penerimaan dengan syarat produk dalam kondisi asli, belum digunakan, dan dengan kemasan lengkap. Biaya pengiriman pengembalian ditanggung oleh pelanggan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ikuti Kami di Media Sosial</h2>
+                <p>Dapatkan inspirasi fashion dan informasi terbaru</p>
+                <div class="social-icons large">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PRESTIGE</h3>
+                    <p>Fashion premium untuk tampilan elegan dan berkelas. Kualitas terbaik untuk gaya hidup Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Navigasi</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="koleksi.html">Koleksi</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Fashion No. 123, Jakarta</p>
+                    <p><i class="fas fa-phone"></i> +62 123 4567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@prestige.id</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2015 PRESTIGE. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script/dropdown.js"></script>
+</body>
+</html>
